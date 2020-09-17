@@ -6,16 +6,16 @@
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_bfcy_testproject_TestDemo_getString(JNIEnv *env, jobject thiz) {
-    std::string hello = "Hello from C++";
+Java_com_bfcy_testlibrary_TestNdk_getString(JNIEnv *env, jobject thiz) {
+    std::string hello = "Hello from C++ TestNdk so";
     return env->NewStringUTF(hello.c_str());
 }
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_bfcy_testproject_TestDemo_getName(JNIEnv *env, jobject thiz) {
+Java_com_bfcy_testlibrary_TestNdk_getName(JNIEnv *env, jobject thiz) {
     // TODO: implement getName()
-    std::string hello = "Xiao Hong";
+    std::string hello = "Xiao Hong TestNdk so";
     return env->NewStringUTF(hello.c_str());
 }
 extern "C"
