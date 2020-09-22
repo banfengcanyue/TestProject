@@ -1,2 +1,5 @@
+include ':testgradle'
+include ':testbintray'
+include ':testndk'
 include ':app', ':testlibrary'
 rootProject.name='TestProject'
