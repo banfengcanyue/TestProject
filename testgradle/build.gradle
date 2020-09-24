@@ -30,3 +30,37 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 }
+
+//// 自定义Task
+//task customTask1 {
+//    doLast {
+//        println 'customTask1:doLast'
+//    }
+//
+//    doFirst {
+//        println 'customTask1:doFirst'
+//    }
+//}
+//// 自定义Task依赖其他Task
+//task customTask2(dependsOn: customTask1) {
+//    doLast {
+//        println 'customTask2:doLast'
+//    }
+//
+//    doFirst {
+//        println 'customTask2:doFirst'
+//    }
+//}
+//
+//ext.age = 18
+//
+//ext {
+//    phone = 123455
+//    address = '保定'
+//}
+//
+//task outMain() {
+//    println "年龄是：${age}"
+//    println "电话是：${phone}"
+//    println "年龄是：${address}"
+//}

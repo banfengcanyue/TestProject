@@ -1,4 +1,4 @@
-package com.bfcy.testlibrary;
+package com.bfcy.testndk;
 
 public class TestNdk {
     static {
