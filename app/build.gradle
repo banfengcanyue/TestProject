@@ -40,4 +40,6 @@ dependencies {
     implementation project(path: ':testgradle')
     implementation project(path: ':testndk')
 
+    implementation 'com.google.android.material:material:1.2.1'
+
 }
