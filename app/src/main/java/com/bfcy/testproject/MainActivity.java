@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -63,5 +64,10 @@ public class MainActivity extends AppCompatActivity {
 //        I/tag: clipData-uri: http://www.baidu.com
 //        I/tag: clipData-intent: 这是测试的Intent
 
+    }
+
+    public void testAidl(View view) {
+        Intent intent = new Intent(this, TestAidlActivity.class);
+        startActivity(intent);
     }
 }
