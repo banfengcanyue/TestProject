@@ -1,13 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext.kotlin_version = "1.5.30"
     repositories {
         google()
+        mavenCentral()
         jcenter()
-        
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath "com.android.tools.build:gradle:4.2.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         //上传 JitPack插件
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
         //上传 Bintray插件
@@ -21,6 +23,7 @@ buildscript {
 allprojects {
     repositories {
         google()
+        mavenCentral()
         jcenter()
         
     }

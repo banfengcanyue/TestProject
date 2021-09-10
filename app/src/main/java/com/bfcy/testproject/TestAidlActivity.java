@@ -17,7 +17,7 @@ import java.util.List;
 
 public class TestAidlActivity extends AppCompatActivity {
 
-    private final String TAG = MainActivity.class.getSimpleName();
+    private final String TAG = TestActivity.class.getSimpleName();
 
     private final String ACTION1 = "android.intent.action.ConnectService";
     private final String ACTION2 = "android.intent.action.BookService";

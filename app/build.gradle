@@ -1,12 +1,15 @@
-apply plugin: 'com.android.application'
-
+//apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.bfcy.testproject"
-        minSdkVersion 17
-        targetSdkVersion 29
+        minSdkVersion 21
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -23,23 +26,58 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-
-//    implementation(name: 'mearisdk-release', ext: 'aar')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.multidex:multidex:2.0.1' // 多dex支持，项目大了必须加
-    implementation project(path: ':testbintray')
-    implementation project(path: ':testgradle')
-    implementation project(path: ':testndk')
 
-    implementation 'com.google.android.material:material:1.2.1'
-
+//    implementation project(path: ':testndk')
 }
+
+//// 自定义Task
+//task customTask1 {
+//    doLast {
+//        println 'customTask1:doLast'
+//    }
+//
+//    doFirst {
+//        println 'customTask1:doFirst'
+//    }
+//}
+//// 自定义Task依赖其他Task
+//task customTask2(dependsOn: customTask1) {
+//    doLast {
+//        println 'customTask2:doLast'
+//    }
+//
+//    doFirst {
+//        println 'customTask2:doFirst'
+//    }
+//}
+//
+//ext.age = 18
+//
+//ext {
+//    phone = 123455
+//    address = '保定'
+//}
+//
+//task outMain() {
+//    println "年龄是：${age}"
+//    println "电话是：${phone}"
+//    println "年龄是：${address}"
+//}

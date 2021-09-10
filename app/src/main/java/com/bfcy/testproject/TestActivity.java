@@ -12,18 +12,17 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.bfcy.testndk.TestDemo;
 
 
-public class MainActivity extends AppCompatActivity {
+public class TestActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_test);
         TextView textView = findViewById(R.id.textView);
-        textView.setText(new TestDemo().getString());
-        testClipboard();
+
+//        testClipboard();
     }
 
     public void test() {
