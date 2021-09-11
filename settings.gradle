@@ -1,6 +1,10 @@
 include ':app'
 rootProject.name='TestProject'
 
+// 说明：
+// 1.flutter_module 下生成的settings.gradle要删除，里面的 include ':.android' 会导致flutter_module无法单独运行
+// 2.新下载的项目需要先单独运行 flutter_module，生成相关的配置文件，再运行主工程
+
 // 引入Flutter项目，不同位置路径不同
 setBinding(new Binding([gradle: this]))
 evaluate(new File(
