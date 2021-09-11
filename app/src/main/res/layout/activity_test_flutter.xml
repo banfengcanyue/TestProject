@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/testFlutter1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="冷加载 FlutterActivity"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/testFlutter2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热加载 FlutterActivity"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/testFlutter3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="冷加载 FlutterFragment"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/testFlutter4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热加载 FlutterFragment"
+        android:textAllCaps="false" />
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

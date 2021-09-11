@@ -10,6 +10,8 @@ class MyApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        // 给 FlutterActivity 或 FlutterFragment 使用的预加热引擎
+
         // Instantiate a FlutterEngine.
         flutterEngine = FlutterEngine(this)
         // Configure an initial route.
