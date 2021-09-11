@@ -8,6 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- 透明主题 -->
+    <style name="MyTheme" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
 
     <style name="style_text_blue">
         <item name="android:layout_width">wrap_content</item>

@@ -45,6 +45,9 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.multidex:multidex:2.0.1' // 多dex支持，项目大了必须加
 
+    // 引入Flutter项目
+    implementation project(path: ':flutter')
+
 //    implementation project(path: ':testndk')
 }
 
