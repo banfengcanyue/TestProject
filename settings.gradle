@@ -6,12 +6,12 @@ rootProject.name='TestProject'
 // 2.新下载的项目需要先单独运行 flutter_module，生成相关的配置文件，再运行主工程
 
 // 引入Flutter项目，不同位置路径不同
-setBinding(new Binding([gradle: this]))
-evaluate(new File(
-        settingsDir,
-        'flutter_module/.android/include_flutter.groovy'
-))
-include ':flutter_module'
+//setBinding(new Binding([gradle: this]))
+//evaluate(new File(
+//        settingsDir,
+//        'flutter_module/.android/include_flutter.groovy'
+//))
+//include ':flutter_module'
 
 //setBinding(new Binding([gradle: this]))
 //evaluate(new File(
